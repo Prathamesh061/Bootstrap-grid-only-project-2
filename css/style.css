@@ -1,45 +1,241 @@
-    /* .container {
-        border: 5px solid black;
+body {
+    min-width: 300px;
+}
+header {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section h2.section-head {
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-head::after {
+    background-color: #e74c3c;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+#logo {
+    font-size: 2rem;
+    padding-top: 0.1em;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    color: #fff;
+    padding: 15px 10px;
+    display: inline-block;
+}
+
+#menu li a:hover {
+    background-color: #c0392b;
+}
+
+#banner {
+    background: url('../images/banner.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.banner-title {
+    padding-top: 2rem;
+}
+
+.banner-title h1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.banner-title p.lead {
+    counter-reset: #fff;
+    background-color: rgba(231, 76, 60, 0.7);
+    padding: 10px;
+}
+
+.service-box {
+    text-align: center;
+}
+
+.service-box i.fa {
+    color: #c0392b;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#testimonials {
+    color: #fff;
+    background: url(../images/testimonial-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+}
+
+/* #testimonials::before {
+    background: rgba(52, 73, 94, 0.7);
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.news-post img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-post h3 {
+    font-size: 1.35rem;
+}
+
+.news-post h3 a {
+    color: #e74c3c;
+}
+
+.post-date {
+    font-size: 0.8em;
+    margin-bottom: 2px;
+}
+
+.post-date::before {
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+a.readmore {
+    font-size: 0.9em;
+    color: #e74c3c;
+}
+
+a.readmore::after {
+    content: '\f101';
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+#footer-sidebar {
+    color: #fff;
+    background: #34495e;
+    padding: 20px 0;
+}
+
+.footer-widget h4::after {
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+
+.footer-widget a {
+    color: #fff;
+}
+
+.latest-news li {
+    margin-bottom: 3px;
+}
+
+.latest-news li::before {
+    content: '\f101';
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+footer {
+    color: #fff;
+    background-color: #2c3950;
+    padding: 10px 0;
+}
+
+#social-icons li {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+#social-icons li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 992px) {
+    .news-post {
+        margin-bottom: 30px;
     }
 
-    .row {
-        border: 3px solid red;
-    }
+}
 
-    [class^="col"] {
-        border: 3px solid green;
-    } */
-
-    #header {
-        background-color: orange;
+@media (max-width: 768px) {
+    #logo {
+        text-align: center;
+        margin: 10px 0;
     }
 
     #menu {
-        background-color: pink;
+        text-align: center;
     }
 
-    #menu ul {
-        list-style: none;
-        margin: 0;
+    .banner-title {
+        padding-top: 0;
     }
 
-    #menu ul li {
-        display: inline-block;
-
+    .banner-title h1 {
+        font-size: 1.7rem;
     }
 
-    body {
-        background-color: grey;
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    #content {
-        background-color: white;
+    .testimonial {
+        text-align: center;
+        margin-bottom: 30px;
     }
 
-    #sidebar {
-        background-color: lightblue;
+    .service-box {
+        margin-bottom: 30px;
     }
 
-    #footer {
-        background-color: orange;
+    .footer-widget {
+        margin-bottom: 20px;
     }
+
+    footer {
+        text-align: center;
+    }
+
+    #social-icons {
+        margin-top: 10px;
+    }
+}
